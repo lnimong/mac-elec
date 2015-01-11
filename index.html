@@ -6,10 +6,9 @@
 <!-- -->
 
 <!-- js libs -->
-<script type="text/javascript" src="js/libs/jquery.js"></script>
-<script type="text/javascript" src="js/libs/underscore.js"></script>
-<script type="text/javascript" src="js/libs/backbone.js"></script>
-<script type="text/javascript" src="js/libs/knockout.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
 <!-- -->
 
 <!-- -->
@@ -20,15 +19,64 @@
 </head>
 
 <body>
-	<div id="navigation">
-		<a href="#who">qui</a>
-		<a href="#what">quoi</a>
-		<a href="#how">comment</a>
+
+	<div  id="title">
+		BIENVENUE CHEZ MAC-ELEC
 	</div>
 
-	<div id="maincontent">
-		
+	<div>
+		<div id="navigation">
+			<div id="links">
+				<a href="#who" id="wholink"><div>Qui sommes-nous?</div></a>
+				<a href="#what" id="whatlink"><div>Que faisons nous?</div></a>
+				<a href="#how" id="howlink"><div>Comment nous contacter?</div></a>
+			</div>
+
+			<div id="logo">
+				<img src="img/et.jpg">
+			</div>
+			
+		</div>
+
+		<div id="maincontent">
+						
+		</div>
 	</div>
+	<script type="text/template" id="who_temp">
+		<div id="who" class="root">
+			<img src="img/who.png">
+			<div class="blabla">
+				<div class="title">Qui sommes-nous ?</div>
+				<div class="text">
+				Electriciens sans frontières est une Organisation non gouvernementale (ONG) de solidarité internationale reconnue d’utilité publique
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/template" id="what_temp">
+		<div id="what" class="root">
+			<div class="blabla">
+				<div class="title">Que faisons nous ?</div>
+				<div class="text">
+				Electriciens sans frontières est une Organisation non gouvernementale (ONG) de solidarité internationale reconnue d’utilité publique
+				</div>
+			</div>
+			<img src="img/what.png">
+		</div>
+	</script>
+
+	<script type="text/template" id="how_temp">
+		<div id="how" class="root">
+			<img src="img/how.png">
+			<div class="blabla">
+				<div class="title">Comment nous contacter ?</div>
+				<div class="text">
+				Electriciens sans frontières est une Organisation non gouvernementale (ONG) de solidarité internationale reconnue d’utilité publique
+				</div>
+			</div>
+		</div>
+	</script>
 </body>
 
 </html>

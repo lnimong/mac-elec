@@ -1,0 +1,128 @@
+@foreground:#6279E3;
+@black:#000;
+@white:#fff;
+@background:#fff;
+@light:#C1CCE3;
+@dark:#4D548F;
+
+html, body, div {
+	padding:0;
+	margin:0;
+	border: none; 
+}
+
+a {
+	text-decoration:none;
+}
+
+body {
+
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: @foreground; background:@background; vertical-align: top;
+
+	#title {
+		font-family: 'WOL_Reg','Segoe UI',Tahoma,Helvetica,sans-serif;
+		font-size:4em;
+		color: @white;
+		background: @foreground;
+	}
+
+	#navigation {
+
+		z-index: 30;
+		display: inline-block;
+		font-size: 1.2em;
+		width:12em;
+
+		#logo {
+			text-align: center;
+			padding-top: 1em;
+			img {
+				width: 6em;
+			}	
+		}
+
+		#links{
+
+			padding-top:2em;
+
+			a {
+
+				z-index: 40;
+				margin-bottom: 1em;
+				color: @white;
+				display: inline-block;
+				background: @foreground;
+				padding: .5em;
+				text-align: right;
+
+				transition: background-color 2s, width 2s;
+
+				&.active {
+					background: @dark;
+				}
+
+				&:hover {
+
+					width:11em;
+					background: @black;
+				}
+
+				div {
+
+					z-index: 40;
+					display: inline-block;
+					width: 9em;
+
+					transition-property: width;
+					transition-duration: 2s;
+				}
+
+			}			
+		}
+	}
+
+
+	#maincontent {
+
+		z-index: 20;
+
+		display: inline-block;
+		vertical-align: top;
+		.root{
+			padding-top:1em;
+
+			z-index: 20;
+
+			.blabla {
+				display: inline-block;
+				vertical-align: top;
+				font-size: 1.1em;
+				width: 20em;
+				text-align: justify;
+				margin-top: 1em;
+				padding: 1em;
+				border:solid 1px;
+				border-color: @light;
+
+				.title{
+					font-size: 2em;
+					margin-bottom: .5em;
+					text-align: left;
+					color: @light;
+				}
+
+				.text {
+					color: @dark;
+				}
+			}
+
+		}
+
+		#how {
+			img {
+				width:20em;	
+			}
+		}
+	}
+}
