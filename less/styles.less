@@ -56,15 +56,13 @@ body {
 				padding: .5em;
 				text-align: right;
 
-				transition: background-color 2s, width 2s;
+				transition: background-color 2s;
 
 				&.active {
 					background: @dark;
 				}
 
 				&:hover {
-
-					width:11em;
 					background: @black;
 				}
 
@@ -75,7 +73,12 @@ body {
 					width: 9em;
 
 					transition-property: width;
-					transition-duration: 2s;
+					transition-duration: .5s;
+
+					&:hover {
+						width:11em;
+					}
+
 				}
 
 			}			
